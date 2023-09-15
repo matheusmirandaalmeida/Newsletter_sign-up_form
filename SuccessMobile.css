@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+:root {
+  --cor00: hsl(4, 100%, 67%);
+  --cor01: hsl(234, 29%, 20%);
+  --cor02: hsl(235, 18%, 26%);
+  --cor03: hsl(231, 7%, 60%);
+  --cor04: hsl(0, 0%, 100%);
+  --img: url('front-end/assets/images/icon-list.svg');
+  --img-icon-success: url('front-end/assets/images/icon-success.svg');
+}
+
+body {
+  background-color: var(--cor04);
+  height: 100vh;
+}
+

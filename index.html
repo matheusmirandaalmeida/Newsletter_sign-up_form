@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+
+  <link href="portrait.css" rel="stylesheet" type="text/css" media="screen and (orientation: portrait)"/>
+
+  <link href="landscape.css" rel="stylesheet" type="text/css" media="screen and (orientation: landscape)"/>
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="front-end/assets/images/favicon-32x32.png">
+  
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <main class="container-main">
+    <div class="container-left">
+      <div class="content-left">
+        <h1>Stay updated!</h1>
+
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</ul>
+      </ul>
+        <!-- Action: enviar dados para o servidor, usa a propriedade 'ACTION', o valor da action é o LINK que vai apoar para o servidor -->
+        <!-- method: explica ao navegor como os dadps deve ser enviados 
+        Tipos de method: POST, usado quando quer salvar uma imformação no servidor. GET: usado quando quer consultar uma informação do servidor. UPDATE, quando quer atualizar uma informação no servidor. DELETE, quando quer deletar uma informação. 
+        -->
+        <!-- o ACTION É PARA MANTADAR A INFORMAÇÃO PARA A API QUE IRÁ RETORNAR O EMAIL, O METHOD É O MEIO/TIPO DE FORMA DE ENVIO. 
+        action="https://api.staticforms.xyz/submit" method="POST" -->
+      <form id="formulario" action="pageSuccess.html" method="post">
+        <input type="hidden" name="accessKey" value="b0046795-30be-4df3-9e17-c3c4a7b4d7fa">
+        <!-- No value vêm o endereço da pagina, no nosso caso a página de confirmação que o email foi enviado. -->
+        <input type="hidden" name="redirecto" value="#">
+        <label>Email address</label>
+        <input id="email" type="email" name="email" value="" placeholder="email@company.com">
+        <button>Subscribe to monthly newsletter</button>
+          <!-- <a href="pageSuccess.html">Subscribe to monthly newsletter</a> -->
+      </form>
+      <div id="response"></div>
+    </div>
+      </div>
+    <div class="container-rigth">
+      <img class="img-main" src="front-end/assets/images/illustration-sign-up-desktop.svg">
+      <img class="img-mobile" src="front-end/assets/images/illustration-sign-up-mobile.svg">
+    </div>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="script.js"></script>
+</body>
+</html>
