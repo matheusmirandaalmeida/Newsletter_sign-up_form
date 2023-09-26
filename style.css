@@ -22,6 +22,7 @@ body {
   min-height: 100vh;
   background: hsl(234, 29%, 20%);
   font-size: 16px;
+  flex-direction: column;
 }
 
 .container-main {
@@ -55,9 +56,11 @@ body {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
   font-weight: 700;
   font-size: 45px;
-  margin: 0px;
   /* font-family: 'Roboto'; */
 }
 
@@ -119,6 +122,10 @@ button {
   max-width: 100%;
   height: auto;
   overflow: hidden;
+}
+
+.badge-base {
+  margin: 20px;
 }
 
 @media (min-width: 320px) {
